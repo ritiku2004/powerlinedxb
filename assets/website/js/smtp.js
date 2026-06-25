@@ -5,7 +5,7 @@ var Email = {
             a.nocache = Math.random();
             a.Action = "Send";
             var t = JSON.stringify(a);
-            Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) {
+            Email.ajaxPost("send-email.php", t, function (e) {
                 n(e);
             });
         });

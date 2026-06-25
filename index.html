@@ -120,9 +120,7 @@
     <link rel="dns-prefetch" href="http://cdnjs.cloudflare.com/" />
     <link rel="dns-prefetch" href="http://unpkg.com/" />
     <link rel="dns-prefetch" href="http://www.googletagmanager.com/" />
-    <link rel="dns-prefetch" href="http://www.livechat.com/" />
-    <link rel="preconnect" href="https://cdn.livechatinc.com/" crossorigin>
-    <link rel="dns-prefetch" href="http://cdn.livechatinc.com/">
+
 
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.rel='stylesheet'">
 
@@ -242,7 +240,7 @@
           type="video/mp4"
           fetchpriority="high">
      
-    <script src="assets/website/js/smtp.js"></script>    
+    <script src="assets/website/js/smtp.js?v=1.1"></script>    
     
 
 
@@ -258,39 +256,7 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
     
         
-    <!-- <script async>
-        window.__lc = window.__lc || {};
-        window.__lc.license = 19254283;
-        window.__lc.integration_name = "manual_onboarding";
-        window.__lc.product_name = "livechat";
-        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-    </script> -->
-    <script>
-        window.__lc = window.__lc || {};
-        window.__lc.license = 19254283;
 
-        function loadLiveChat() {
-            if (window.__lcLoaded) return;
-            window.__lcLoaded = true;
-            var s = document.createElement('script');
-            s.async = true;
-            s.src = 'https://cdn.livechatinc.com/tracking.js';
-            document.head.appendChild(s);
-        }
-
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadLiveChat, { timeout: 3000 });
-        } else {
-            setTimeout(loadLiveChat, 2500);
-        }
-
-        // Optional: load immediately on first user interaction
-        ['pointerdown','keydown','scroll','touchstart'].forEach(evt =>
-            window.addEventListener(evt, loadLiveChat, { once: true, passive: true })
-        );
-    </script>
-
-    <noscript><a href="https://www.livechat.com/chat-with/19254283/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 
     <div class="onovo-page footer--fixed" id="home">
         <!-- Preloader -->
@@ -969,12 +935,12 @@
 
         </section>
 
-        <section class="onovo-portfolio-section" id="work">
+        <!-- <section class="onovo-portfolio-section" id="work">
             <div class="container">
-                <!-- Heading Row -->
+             
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
-                        <!-- Heading -->
+                 
                         <div class="onovo-heading gap-bottom-80">
                             <div class="onovo-subtitle-1">
                                 <span> Featured Projects </span>
@@ -987,10 +953,10 @@
                     
                 </div>
 
-                <!-- Swiper Slider -->
+         
                 <div class="swiper onovo-portfolio-slider">
                     <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
+                  
                         <div class="swiper-slide">
                             <div class="onovo-portfolio-item">
                                 <div class="image">
@@ -1004,7 +970,7 @@
                             </div>
                         </div>
 
-                        <!-- Slide 2 -->
+                   
                         <div class="swiper-slide">
                             <div class="onovo-portfolio-item">
                                 <div class="image">
@@ -1018,7 +984,7 @@
                             </div>
                         </div>
 
-                        <!-- Slide 3 -->
+                  
                         <div class="swiper-slide">
                             <div class="onovo-portfolio-item">
                                 <div class="image">
@@ -1032,7 +998,7 @@
                             </div>
                         </div>
 
-                        <!-- Slide 4 -->
+                
                         <div class="swiper-slide">
                             <div class="onovo-portfolio-item">
                                 <div class="image">
@@ -1046,7 +1012,7 @@
                             </div>
                         </div>
 
-                        <!-- Slide 5 -->
+                
                         <div class="swiper-slide">
                             <div class="onovo-portfolio-item">
                                 <div class="image">
@@ -1060,7 +1026,6 @@
                             </div>
                         </div>
 
-                        <!-- Slide 6 -->
                         <div class="swiper-slide">
                             <div class="onovo-portfolio-item">
                                 <div class="image">
@@ -1074,19 +1039,11 @@
                             </div>
                         </div>
 
-                        <!-- Add more slides here -->
+              
                     </div>
                 </div>
-                <!-- <div class="align-center mt-20">
-                    <a class="onovo-btn onovo-hover-btn" href="#work">
-                        <i class="arrow">
-                            <span></span>
-                        </i>
-                        <span> Explore More Project </span>
-                    </a>
-                </div> -->
             </div>
-        </section>
+        </section> -->
 
         <!-- Onovo Reviews -->
         <!-- <section class="onovo-section gap-top-100 gap-bottom-140">
